@@ -7,7 +7,7 @@ const Heading = () => {
     <div>
         <div className="flex item-center mb-10">
             <Link to='/tasklist'>
-            <h5 className='text-gray-900 font-bold text-2xl'>Task List</h5>
+            <h5 className='text-gray-900 font-bold text-2xl'>Lista de Tareas</h5>
             </Link>
         <div className="flex-grow text-right px-4 py-2 m2">
           <Link to='/taskform'>
