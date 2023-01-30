@@ -13,10 +13,11 @@ function App() {
       <ContextProvider>
       <Heading />
           <Routes>
-            <Route path='/' element={<h1 className="text-3xl">Lista de Tareas</h1>} />
+            <Route path='crud-context-app/' element={<h1 className="text-3xl text-gray-900">Lista de Tareas</h1>} />
             <Route path="/tasklist" element={<TaskList />} />
             <Route path="/taskform" element={<TaskForm />} />
             <Route path='/edit/:id' element={<TaskForm />} />
+            <Route path='*' element= {<h1 className="text-3xl text-gray-900">La ruta no es correcta</h1>} />
           </Routes>
       </ContextProvider>
         </div>

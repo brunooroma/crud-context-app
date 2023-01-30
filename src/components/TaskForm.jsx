@@ -49,6 +49,7 @@ const TaskForm = () => {
             onChange={handleChange}
             value={task.title}
             className="py-3 px-4 focus:outline-none focus:text-gray-100 bg-gray-700 w-full"
+            required
           />
         </div>
 
@@ -60,6 +61,7 @@ const TaskForm = () => {
             onChange={handleChange}
             value={task.description}
             className="py-3 px-4 focus:outline-none focus:text-gray-100 bg-gray-700 w-full"
+            required
           ></textarea>
         </div>
         <button className="bg-green-600 w-full hover:bg-green-500 py-2 px-4 mt-5 rounded">
