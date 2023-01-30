@@ -39,7 +39,7 @@ const TaskForm = () => {
 
   return (
     <div className="flex justify-center items-center h-3/4">
-      <form className="bg-gray-900 p-10" onSubmit={handleSubmit}>
+      <form className="bg-zinc-900 p-10 rounded-2xl" onSubmit={handleSubmit}>
         <h2 className="mb-7 text-3xl">{task.id ? 'Editando una tarea' : 'Creando una tarea'}</h2>
         <div className="mb-5">
           <input

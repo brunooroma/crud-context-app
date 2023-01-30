@@ -7,13 +7,13 @@ const initialState = {
     {
       id: 1,
       title: "titulo uno",
-      description: "alguna descripcion",
+      description: "esta es la descripcion de la tarea 1",
       done: false,
     },
     {
       id: 2,
       title: "titulo dos",
-      description: "alguna descripcion",
+      description: "aca hay que detallar la tarea 2",
       done: false,
     },
   ],

@@ -16,19 +16,19 @@ const TaskList = () => {
             <div className="w-full md:w-1/3">
               <h1 className="text-2xl capitalize">{task.title}</h1>
               <hr />
-              <br />
-              <p className="text-lg lowercase">{task.description}</p>
-              <p className="text-xs">ID: {task.id}</p>
+              <p className="text-lg lowercase p-4">{task.description}</p>
+              <hr />
+              <p className="text-xs pt-2">ID: {task.id}</p>
             </div>
             <div className="w-full md:w-1/3 p-5 self-center">
               <Link
                 to={`/edit/${task.id}`}
-                className="bg-gray-600 hover:bg-gray-500 py-2 px-4 mr-2 rounded"
+                className="bg-gray-600 hover:bg-gray-400 py-2 px-4 mr-2 rounded"
               >
                 Editar
               </Link>
               <button
-                className="bg-red-600 hover:bg-red-500 py-2 px-4 mr-2 mt-4 md:mt-0 rounded"
+                className="bg-red-600 hover:bg-red-400 py-2 px-4 mr-2 mt-4 md:mt-0 rounded"
                 onClick={() => {
                   deleteTask(task.id);
                 }}
@@ -39,7 +39,7 @@ const TaskList = () => {
             <div className="w-full md:w-1/3 p-5 self-center">
               {task.done ? (
                 <button
-                  className="bg-gray-600 hover:bg-gray-500 py-2 px-4 mr-2 rounded"
+                  className="bg-gray-600 hover:bg-gray-400 py-2 px-4 mr-2 rounded"
                   onClick={() => {
                     toggleTaskDone(task.id);
                   }}
